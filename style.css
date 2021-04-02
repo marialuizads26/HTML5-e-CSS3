@@ -1,52 +1,116 @@
-body {
-    
+header {
+    background: #bbbbbb;
+    padding: 20px 0;
 }
 
-#banner {
-    width: 100%;
+.caixa {
+    position: relative;
+    width: 1080px;
+    margin: 0 auto;
 }
 
-.principal {
-    background: #CCCCCC;
-    padding: 30px;
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
 }
 
-.titulo-principal {
-    padding-left: 20px;
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
 }
 
-.titulo-centralizado {
-    text-align: center;
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
 }
 
-p {
-    text-align: center;
+/* Mouse em cima do elemento */
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
 }
 
-#missao {
-    font-size: 20px;
+.produtos {
+    width: 1080px;
+    margin: 0 auto;
+    padding: 50px 0;
 }
 
-em strong {
-    color: #FF0000;
-}
-
-.itens {
-    font-style: italic;
-}
-
-.beneficios {
-    background: #ffffff;
-    padding: 20px;
-}
-
-ul {
+.produtos li {
     display: inline-block;
+    text-align: center;
     vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
+    margin: 0 1.5%;
+    width: 30%;
+    padding: 30px 20px;
+    box-sizing: border-box; /* Torna o width 30% definitivo */
+    border: 2px solid #000000;
+    border-radius: 10px;
 }
 
-.imagembeneficios {
+/* Cursor em cima do elemento */
+.produtos li:hover {
+    border-color: #C78C19;
+}
+
+/* Mouse clicando elemento */
+.produtos li:active {
+    border-color: #088C19;
+}
+ /* Cursor em cima do elemento de texto */
+.produtos li:hover h2 {
+    font-size: 30px;
+}
+
+.produtos h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-weight: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url("imagens/bg.jpg");
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+main {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+form input {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
     width: 50%;
 }
